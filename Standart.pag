@@ -1,0 +1,470 @@
+VERSION 5.00
+Begin VB.PropertyPage Standart 
+   Caption         =   "Standart"
+   ClientHeight    =   3495
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5925
+   PaletteMode     =   0  'Rasterbild
+   ScaleHeight     =   3495
+   ScaleWidth      =   5925
+   Begin VB.CheckBox chkGreyIcon 
+      Caption         =   "GreyIcon"
+      Height          =   285
+      Left            =   1740
+      TabIndex        =   26
+      Top             =   660
+      Width           =   1065
+   End
+   Begin VB.ComboBox CombButtonType 
+      Height          =   315
+      Left            =   1050
+      Style           =   2  'Dropdown-Liste
+      TabIndex        =   25
+      Top             =   2130
+      Width           =   1905
+   End
+   Begin VB.ComboBox CombAlign 
+      Height          =   315
+      Left            =   810
+      Style           =   2  'Dropdown-Liste
+      TabIndex        =   23
+      Top             =   1740
+      Width           =   2145
+   End
+   Begin VB.Frame Frame2 
+      Caption         =   "Style"
+      Height          =   975
+      Left            =   90
+      TabIndex        =   15
+      Top             =   2490
+      Width           =   5805
+      Begin VB.OptionButton Style 
+         Height          =   675
+         Index           =   5
+         Left            =   4800
+         Picture         =   "Standart.pgx":0000
+         Style           =   1  'Grafisch
+         TabIndex        =   21
+         Top             =   210
+         Width           =   855
+      End
+      Begin VB.OptionButton Style 
+         Height          =   675
+         Index           =   4
+         Left            =   3870
+         Picture         =   "Standart.pgx":0473
+         Style           =   1  'Grafisch
+         TabIndex        =   20
+         Top             =   210
+         Width           =   855
+      End
+      Begin VB.OptionButton Style 
+         Height          =   675
+         Index           =   3
+         Left            =   2940
+         Picture         =   "Standart.pgx":07F8
+         Style           =   1  'Grafisch
+         TabIndex        =   19
+         Top             =   210
+         Width           =   855
+      End
+      Begin VB.OptionButton Style 
+         Height          =   675
+         Index           =   2
+         Left            =   2010
+         Picture         =   "Standart.pgx":0CC1
+         Style           =   1  'Grafisch
+         TabIndex        =   18
+         Top             =   210
+         Width           =   855
+      End
+      Begin VB.OptionButton Style 
+         Height          =   675
+         Index           =   1
+         Left            =   1080
+         Picture         =   "Standart.pgx":1160
+         Style           =   1  'Grafisch
+         TabIndex        =   17
+         Top             =   210
+         Width           =   855
+      End
+      Begin VB.OptionButton Style 
+         Appearance      =   0  '2D
+         ForeColor       =   &H80000008&
+         Height          =   675
+         Index           =   0
+         Left            =   150
+         Picture         =   "Standart.pgx":15BC
+         Style           =   1  'Grafisch
+         TabIndex        =   16
+         Top             =   210
+         Width           =   855
+      End
+   End
+   Begin VB.ComboBox CombCursor 
+      Height          =   315
+      Left            =   690
+      Style           =   2  'Dropdown-Liste
+      TabIndex        =   13
+      Top             =   1350
+      Width           =   2265
+   End
+   Begin VB.CheckBox chkSound 
+      Caption         =   "Play Sound (Mouse over)"
+      Height          =   285
+      Left            =   90
+      TabIndex        =   12
+      ToolTipText     =   "Use the System Command-Sound"
+      Top             =   990
+      Width           =   2295
+   End
+   Begin VB.CheckBox chkHit 
+      Caption         =   "Hit (Mouse over)"
+      Height          =   285
+      Left            =   90
+      TabIndex        =   11
+      ToolTipText     =   "Hightlight the Caption by MouseOver"
+      Top             =   660
+      Width           =   1575
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Font"
+      Height          =   1635
+      Left            =   3090
+      TabIndex        =   2
+      Top             =   0
+      Width           =   2805
+      Begin VB.CheckBox chkFontBold 
+         Caption         =   "FontBold"
+         Height          =   285
+         Left            =   1710
+         TabIndex        =   10
+         Top             =   960
+         Width           =   1005
+      End
+      Begin VB.CheckBox chkFontItalic 
+         Caption         =   "FontItalic"
+         Height          =   285
+         Left            =   1710
+         TabIndex        =   9
+         Top             =   1305
+         Width           =   1020
+      End
+      Begin VB.TextBox txtFontName 
+         Height          =   330
+         Left            =   120
+         TabIndex        =   6
+         Top             =   465
+         Width           =   1650
+      End
+      Begin VB.TextBox txtFontSize 
+         Height          =   330
+         Left            =   1860
+         TabIndex        =   5
+         Top             =   450
+         Width           =   660
+      End
+      Begin VB.CheckBox chkFontStrikethru 
+         Caption         =   "FontStrikethru"
+         Height          =   285
+         Left            =   120
+         TabIndex        =   4
+         Top             =   960
+         Width           =   1380
+      End
+      Begin VB.CheckBox chkFontUnderline 
+         Caption         =   "FontUnderline"
+         Height          =   285
+         Left            =   120
+         TabIndex        =   3
+         Top             =   1290
+         Width           =   1380
+      End
+      Begin VB.Line Line1 
+         X1              =   120
+         X2              =   2640
+         Y1              =   900
+         Y2              =   900
+      End
+      Begin VB.Label lblFontName 
+         Caption         =   "FontName:"
+         Height          =   240
+         Left            =   120
+         TabIndex        =   8
+         Top             =   210
+         Width           =   1560
+      End
+      Begin VB.Label lblFontSize 
+         Caption         =   "FontSize:"
+         Height          =   240
+         Left            =   1860
+         TabIndex        =   7
+         Top             =   195
+         Width           =   810
+      End
+   End
+   Begin VB.TextBox txtCaption 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   1
+      Top             =   285
+      Width           =   2700
+   End
+   Begin VB.Label Label2 
+      Caption         =   "ButtonType:"
+      Height          =   255
+      Left            =   90
+      TabIndex        =   24
+      Top             =   2160
+      Width           =   915
+   End
+   Begin VB.Label Label8 
+      Caption         =   "PicAlign:"
+      Height          =   255
+      Left            =   90
+      TabIndex        =   22
+      Top             =   1770
+      Width           =   675
+   End
+   Begin VB.Label Label1 
+      Caption         =   "Cursor:"
+      Height          =   225
+      Left            =   90
+      TabIndex        =   14
+      Top             =   1380
+      Width           =   555
+   End
+   Begin VB.Label lblCaption 
+      Caption         =   "Caption:"
+      Height          =   240
+      Left            =   90
+      TabIndex        =   0
+      Top             =   30
+      Width           =   2700
+   End
+End
+Attribute VB_Name = "Standart"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub chkFontUnderline_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkFontStrikethru_Click()
+    Changed = True
+End Sub
+
+Private Sub chkGreyIcon_Click()
+    Changed = True
+End Sub
+
+Private Sub CombAlign_Change()
+    Changed = True
+End Sub
+
+Private Sub CombAlign_Click()
+    Changed = True
+End Sub
+
+Private Sub CombButtonType_Change()
+    Changed = True
+End Sub
+
+Private Sub CombButtonType_Click()
+    Changed = True
+End Sub
+
+Private Sub CombCursor_Change()
+    Changed = True
+End Sub
+
+Private Sub CombCursor_Click()
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_Initialize()
+On Error Resume Next
+CombCursor.Clear
+CombCursor.AddItem "0 - Voreinstellung"
+CombCursor.AddItem "1 - Pfeil"
+CombCursor.AddItem "2 - Kreuz"
+CombCursor.AddItem "3 - I-Cursor"
+CombCursor.AddItem "4 - Symbol"
+CombCursor.AddItem "5 - Größeändern"
+CombCursor.AddItem "6 - Größeändern NO SW"
+CombCursor.AddItem "7 - Größeändern NS"
+CombCursor.AddItem "8 - Größeändern NW SO"
+CombCursor.AddItem "9 - Größeändern WO"
+CombCursor.AddItem "10- Aufwärtpfeil"
+CombCursor.AddItem "11- Sanduhr"
+CombCursor.AddItem "12- Nicht ablegen"
+CombCursor.AddItem "13- Pfeil Sanduhr"
+CombCursor.AddItem "14- Pfeil Fragezeichen"
+CombCursor.AddItem "15- Größeändern alles"
+CombCursor.AddItem "99- Hand"
+
+CombAlign.Clear
+CombAlign.AddItem "0 - Top-Center"
+CombAlign.AddItem "1 - Top-Left"
+CombAlign.AddItem "2 - Top-Right"
+CombAlign.AddItem "3 - Middle-Center"
+CombAlign.AddItem "4 - Middle-Left"
+CombAlign.AddItem "5 - Middle-Right"
+CombAlign.AddItem "6 - Bottom-Center"
+CombAlign.AddItem "7 - Bottom-Left"
+CombAlign.AddItem "8 - Bottom-Right"
+
+CombButtonType.Clear
+CombButtonType.AddItem "0 - normal Button"
+CombButtonType.AddItem "9 - Sepperator"
+
+On Error GoTo 0
+End Sub
+
+Private Sub Style_Click(Index As Integer)
+SelectedControls(0).Style = Index
+Changed = True
+End Sub
+
+Private Sub txtFontSize_Change()
+    Changed = True
+End Sub
+
+
+Private Sub txtFontName_Change()
+    Changed = True
+End Sub
+
+
+Private Sub chkFontItalic_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkFontBold_Click()
+    Changed = True
+End Sub
+
+
+Private Sub txtCaption_Change()
+    Changed = True
+End Sub
+
+Private Sub chkHit_Click()
+    Changed = True
+End Sub
+
+Private Sub chkSound_Click()
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).FontUnderline = (chkFontUnderline.Value = vbChecked)
+    SelectedControls(0).FontStrikethru = (chkFontStrikethru.Value = vbChecked)
+    SelectedControls(0).FontSize = txtFontSize.Text
+    SelectedControls(0).FontName = txtFontName.Text
+    SelectedControls(0).FontItalic = (chkFontItalic.Value = vbChecked)
+    SelectedControls(0).FontBold = (chkFontBold.Value = vbChecked)
+    SelectedControls(0).Caption = txtCaption.Text
+    SelectedControls(0).Hit = (chkHit.Value = vbChecked)
+    SelectedControls(0).Sound = (chkSound.Value = vbChecked)
+    SelectedControls(0).Cursor = Trim(Mid(CombCursor.Text, 1, 2))
+    SelectedControls(0).PicAlign = Trim(Mid(CombAlign.Text, 1, 2))
+    SelectedControls(0).PicAlign = Trim(Mid(CombAlign.Text, 1, 2))
+    SelectedControls(0).ButtonType = Trim(Mid(CombButtonType.Text, 1, 2))
+    SelectedControls(0).GreyIcon = (chkGreyIcon.Value = vbChecked)
+
+Call SelectedControls(0).ButtonRePaint
+    
+End Sub
+
+
+Private Sub PropertyPage_SelectionChanged()
+On Error Resume Next
+    chkFontUnderline.Value = (SelectedControls(0).FontUnderline And vbChecked)
+    chkFontStrikethru.Value = (SelectedControls(0).FontStrikethru And vbChecked)
+    txtFontSize.Text = SelectedControls(0).FontSize
+    txtFontName.Text = SelectedControls(0).FontName
+    chkFontItalic.Value = (SelectedControls(0).FontItalic And vbChecked)
+    chkFontBold.Value = (SelectedControls(0).FontBold And vbChecked)
+    txtCaption.Text = SelectedControls(0).Caption
+    chkHit.Value = (SelectedControls(0).Hit And vbChecked)
+    chkSound.Value = (SelectedControls(0).Sound And vbChecked)
+    Style(SelectedControls(0).Style).Value = True
+    chkGreyIcon.Value = (SelectedControls(0).GreyIcon And vbChecked)
+
+Select Case Trim(Mid(SelectedControls(0).Cursor, 1, 2))
+Case Is = 0
+CombCursor.Text = "0 - Voreinstellung"
+Case Is = 1
+CombCursor.Text = "1 - Pfeil"
+Case Is = 2
+CombCursor.Text = "2 - Kreuz"
+Case Is = 3
+CombCursor.Text = "3 - I-Cursor"
+Case Is = 4
+CombCursor.Text = "4 - Symbol"
+Case Is = 5
+CombCursor.Text = "5 - Größeändern"
+Case Is = 6
+CombCursor.Text = "6 - Größeändern NO SW"
+Case Is = 7
+CombCursor.Text = "7 - Größeändern NS"
+Case Is = 8
+CombCursor.Text = "8 - Größeändern NW SO"
+Case Is = 9
+CombCursor.Text = "9 - Größeändern WO"
+Case Is = 10
+CombCursor.Text = "10- Aufwärtpfeil"
+Case Is = 11
+CombCursor.Text = "11- Sanduhr"
+Case Is = 12
+CombCursor.Text = "12- Nicht ablegen"
+Case Is = 13
+CombCursor.Text = "13- Pfeil Sanduhr"
+Case Is = 14
+CombCursor.Text = "14- Pfeil Fragezeichen"
+Case Is = 15
+CombCursor.Text = "15- Größeändern alles"
+Case Is = 99
+CombCursor.Text = "99- Hand"
+End Select
+
+Select Case Trim(Mid(SelectedControls(0).PicAlign, 1, 2))
+Case Is = 0
+CombAlign.Text = "0 - Top-Center"
+Case Is = 1
+CombAlign.Text = "1 - Top-Left"
+Case Is = 2
+CombAlign.Text = "2 - Top-Right"
+Case Is = 3
+CombAlign.Text = "3 - Middle-Center"
+Case Is = 4
+CombAlign.Text = "4 - Middle-Left"
+Case Is = 5
+CombAlign.Text = "5 - Middle-Right"
+Case Is = 6
+CombAlign.Text = "6 - Bottom-Center"
+Case Is = 7
+CombAlign.Text = "7 - Bottom-Left"
+Case Is = 8
+CombAlign.Text = "8 - Bottom-Right"
+End Select
+
+Select Case Trim(Mid(SelectedControls(0).ButtonType, 1, 2))
+Case Is = 0
+CombButtonType.Text = "0 - normal Button"
+Case Is = 9
+CombButtonType.Text = "9 - Sepperator"
+End Select
+
+On Error GoTo 0
+End Sub
+
+
